@@ -5,14 +5,13 @@ package com.ankit.insino_assignment.models;
 public class Product {
     private String imageResourceId;
     private String productName;
-    private String productPrice;
+    private int productPrice;
     private boolean isLoading = false;
     private String category;
     private String designer;
 
 
-
-    public Product(String imageResourceId, String productName, String productPrice, String category, String designer) {
+    public Product(String imageResourceId, String productName, int productPrice, String category, String designer) {
         this.imageResourceId = imageResourceId;
         this.productName = productName;
         this.productPrice = productPrice;
@@ -39,7 +38,7 @@ public class Product {
         return productName;
     }
 
-    public String getProductPrice() {
+    public int getProductPrice() {
         return productPrice;
     }
 

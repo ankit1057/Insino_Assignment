@@ -69,7 +69,7 @@ public class ProductsAdapter extends RecyclerView.Adapter {
             //bind products information with view
             Picasso.with(mContext).load("http://ik.imagekit.io/dailyobjects".concat(currentProduct.getImageResourceId())).fit().into(productHolder.imageViewProductThumb);
             productHolder.textViewProductName.setText(currentProduct.getProductName());
-            productHolder.textViewProductPrice.setText("Price- ₹ ".concat(currentProduct.getProductPrice()));
+            productHolder.textViewProductPrice.setText("Price- ₹ " + currentProduct.getProductPrice());
             productHolder.textViewCategory.setText("Category - ".concat(currentProduct.getCategory()));
             productHolder.textViewDesigner.setText("Designer - ".concat(currentProduct.getDesigner()));
 
